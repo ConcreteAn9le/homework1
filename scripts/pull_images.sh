@@ -1,2 +1,2 @@
 docker pull 494526681395.dkr.ecr.ap-southeast-1.amazonaws.com/bar
-Run java -jar ./build/libs/homework1-1.0-SNAPSHOT.jar
+docker run -d -p 8080:8080 demo:1.0
