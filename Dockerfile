@@ -1,4 +1,4 @@
-FROM java:8
+FROM java:11
 
 COPY build/libs/homework1-1.0-SNAPSHOT.jar demo.jar
 
