@@ -1,9 +1,11 @@
 FROM java:9
 
-COPY build/libs/homework1-1.0-SNAPSHOT.jar demo.jar
+COPY build/libs/homework1-1.0-SNAPSHOT.jar homework1.jar
 
-RUN java -jar ./build/libs/homework1-1.0-SNAPSHOT.jar
+#RUN javac src/main/java/com/Hello.java
 
-ENTRYPOINT ["java", "-jar", "/demo.jar"]
+#CMD java -classpath src/main/java com.Hello
+
+ENTRYPOINT ["java", "-jar", "homework1.jar"]
 
 EXPOSE 8080
